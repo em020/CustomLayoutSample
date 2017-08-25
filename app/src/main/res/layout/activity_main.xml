@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <yimin.sun.customlayoutsample.CustomLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- put first view to left. -->
+        <TextView
+            android:background="#f00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_position="left"
+            android:layout_gravity="fill_vertical|center_horizontal"
+            android:text="l15555555"/>
+
+        <!-- stack second view to left. -->
+        <TextView
+            android:background="#b90000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_position="left"
+            android:layout_gravity="fill_vertical|center_horizontal"
+            android:text="l29999"/>
+
+        <!-- also put a view on the right. -->
+        <TextView
+            android:background="#f00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_position="right"
+            android:layout_gravity="fill_vertical|center_horizontal"
+            android:text="r18888"/>
+
+        <!-- by default views go in the middle; use fill vertical gravity -->
+        <TextView
+            android:background="#0f0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|fill_vertical"
+            android:text="x\naxx"/>
+
+        <!-- by default views go in the middle; use fill horizontal gravity -->
+        <TextView
+            android:background="#00a900"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="adfadfasf"/>
+
+        <!-- by default views go in the middle; use top-left gravity -->
+        <TextView
+            android:background="#00f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:text="x"/>
+
+        <!-- by default views go in the middle; use center gravity -->
+        <TextView
+            android:background="#00f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""/>
+
+        <!-- by default views go in the middle; use bottom-right -->
+        <TextView
+            android:background="#00f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="xx"/>
+
+    </yimin.sun.customlayoutsample.CustomLayout>
+
+</FrameLayout>
